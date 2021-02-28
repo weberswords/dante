@@ -3,6 +3,7 @@ import { LabeledTextField } from "app/core/components/LabeledTextField"
 import { Form, FORM_ERROR } from "app/core/components/Form"
 import signup from "app/auth/mutations/signup"
 import { Signup } from "app/auth/validations"
+import Logo from "app/core/components/Logo"
 
 type SignupFormProps = {
   onSuccess?: () => void
@@ -13,6 +14,7 @@ export const SignupForm = (props: SignupFormProps) => {
 
   return (
     <div>
+      <Logo />
       <h1>Create an Account</h1>
 
       <Form
